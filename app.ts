@@ -11,7 +11,6 @@ import {
 const app = express();
 const router = express.Router();
 
-// Added a route for the root path '/'
 router.get('/', (_req, res) => {
   res.send('Welcome to the reservation API');
 });

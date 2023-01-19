@@ -1,5 +1,11 @@
 # WebApp_Prenotazioni_NodeJS
 Esercitazione NodeJS 
 
-Da implementare e completare -
-WebApp realizzata con NodeJS ed ExpressJS, JavaScript, TypeScript e una semplice parte front-end In ReactJS
+Progetto realizzato in ambiente NodeJS con ExpressJS, Typescript e ReactJS
+
+non ancora completamente in funzione
+per dare lo start al server digitare: "ts-node app.ts"
+
+per avviare anche la parte client: npm start run 
+
+Impostato come localhost predefinito: 3000

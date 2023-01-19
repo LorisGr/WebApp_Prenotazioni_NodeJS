@@ -13,8 +13,15 @@ class Reservation {
         this.ticket = this.generateTicket();
     }
 
-    // Getter per accedere al ticket univoco della prenotazione
-    public get Ticket(): string {
+    public getDate(): string {
+        return this.date;
+    }
+
+    public getFiscalCode(): string {
+        return this.fiscalCode;
+    }
+
+    public getTicket(): string {
         return this.ticket;
     }
 
@@ -35,9 +42,13 @@ class Reservations {
     // Metodo per rimuovere una prenotazione dal database in memoria
     // utilizzando il ticket univoco come identificatore 
     public delete(ticket: string): void {
-        _.remove(this.reservations, (res) => res.Ticket === ticket);
+        _.remove(this.reservations, (res) => res.getTicket() === ticket);
     }
+
+    public getReservations(): Reservation[] {
+        return this.reservations;
+    }
+    
 }
 
 export { Reservation, Reservations };
-
